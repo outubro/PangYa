@@ -1,0 +1,53 @@
+##########################################################################
+#    Work-in-progress descrição do protocolo Loginserver <--> Cliente.   #
+#    Autor: Kurama.							 #
+##########################################################################
+
+Este arquivo inclui headers e blocos de data para diferentes packets.
+
+#######################
+#   Header (Sempre)   #
+#      Sem Crypt      #
+#######################
+U16	packetID		id do pacote
+
+*  descrição:
+*  Simples né!
+*
+
+#######################
+#   Header (Sempre)   #
+#      Com Crypt      #
+#######################
+U8	rndByte			byte random
+U16	packetSIZE		tamanho do packet
+U8	checkByte		byte que valida o header
+
+*  descrição:
+*  o "packetSIZE" é o tamanho do pacote -3 //confirmar e documentar tanto para cliente / servidor
+*
+
+########################
+#   Compressão (Sem)   #
+########################
+
+*  descrição:
+*  os packets do login não possuem compressão
+*
+
+########################
+#    S ->Packet key    #
+########################
+U16 	0xB00		Header
+U32	0x00000000	constante
+U32	key		a key pode ser um número 0..F
+U32	0x0000270F	constante 
+
+*  descrição:
+*  esse packet é enviado sempre que um player conecta no servidor
+*  esse packet não é encriptado, visto que ele que envia a key
+
+########################
+#    R ->Login data    #
+########################
+//por as informações do packet de login
