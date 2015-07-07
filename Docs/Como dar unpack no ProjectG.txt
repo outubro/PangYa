@@ -1,0 +1,51 @@
+######################################################
+#    Work-in-progress como dar unpack no ProjectG.   #
+#    Autor: Kurama.				     #
+######################################################
+
+Este arquivo inclui um tutorial para dar unpack no ProjectG
+
+############################
+#   Arquivos necessários   #
+############################
+
+-
+
+##########################
+#   Configurar OllyDBG   #
+##########################
+
+-
+
+##############
+#   Unpack   #
+##############
+
+*  abrir ProjectG no OllyDBG
+*  abrir script
+*  botão direito -> resume
+*  PROCESS OVERVIEW -> não
+*  PLUGIN & EXCEPTION OVERVIEW -> não
+*  STARTUP INFO BOX -> ok
+*  FIND VM WARE POINTER? -> não
+*  FIND VM OEP BY LCF-AT? -> não
+*  PATCHING EAX WITH -1 OR NOT? -> sim
+*  DO YOU WANT USE THE MAGIC JUMPS AS EAX IS AN API PLACE? -> sim
+*  FIXING IAT WITH THE >>> FAST IAT PATCH METHOD WAY BY LCF-AT <<< -> sim
+*  STACK ANTIDUMP -> ok
+*  SKIP THE HEAP FIXING? -> não
+*  RE-DIRECT THE SECOND HEAP ANTI-DUMP? -> sim
+*  START OF DIRECT IAT PATCHING'S -> sim
+*  botão direito -> resume
+*  aguardar...
+*  SO NOW COMES THE LAST API CHECKING FOR EVERY SINGLE CALL & JMP IN THE CODESECTION! -> não
+*  abrir log data e copiar o OEP
+*  abrir Import REC
+*  selecionar processo do ProjectG
+*  colar OEP
+*  IAT autosearch
+*  Get Imports
+*  botão direito -> Advanced Commands -> Select code sections(s)
+*  Full Dump
+*  Fix dump e selecionar o Full Dump
+*  Unpacked
