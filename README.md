@@ -22,7 +22,7 @@ Não é nada mais que uma tentativa de trazer o PangYa para o universo private n
 #############
 
 * Linguagem<BR>
-    Pascal
+    Pascal (https://en.wikipedia.org/wiki/Object_Pascal)
 * Compilador<BR>
     Embarcadero XE7 (http://docwiki.embarcadero.com/RADStudio/XE8/en/What's_New_in_Delphi_and_C%2B%2BBuilder_XE7)
 * Plataforma<BR>
