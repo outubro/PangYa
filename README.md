@@ -21,7 +21,7 @@ Não é nada mais que uma tentativa de trazer o PangYa para o universo private n
 #  Projeto  #
 #############
 
-* Linguagem<p>
+* Linguagem<BR>
     Pascal
 * Compilador
     Embarcadero XE7 (http://docwiki.embarcadero.com/RADStudio/XE8/en/What's_New_in_Delphi_and_C%2B%2BBuilder_XE7)
