@@ -9,10 +9,14 @@ Este arquivo inclui um tutorial para dar unpack no ProjectG
 #   Arquivos necessários   #
 ############################
 
--
+*  Windows XP(Não funciona em outro)
+*  OllyDbg anti themida
+*  ODbgScript plugin
+*  PhantOm plugin
+*  StrongOD plugin
 
 ##########################
-#   Configurar OllyDBG   #
+#   Configurar OllyDbg   #
 ##########################
 
 -
