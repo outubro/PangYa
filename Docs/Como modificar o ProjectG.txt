@@ -1,0 +1,42 @@
+####################################################
+#    Work-in-progress como modificar o ProjectG.   #
+#    Autor: Kurama.				   #
+####################################################
+
+Este arquivo inclui um tutorial para modificar o ProjectG
+
+############################
+#   Arquivos necessários   #
+############################
+
+*  OllyDbg
+
+###########################
+#   Desabilitar Updater   #
+###########################
+
+*  dar BreakPoint na API MessageBoxA
+*  iniciar o ProjectG
+*  diminuir 0x1E do endereço da chamada da API (Será um JE 0xxxxxxxxx)
+*  alterar para JNZ e salvar
+
+#############################
+#   Desabilitar GameGuard   #
+#############################
+
+*  somar 0xB7 ao endereço do Updater (Será uma CALL)
+*  alterar para NOP (90 90 90 90 90) e salvar
+
+#########################
+#   Remover GameGuard   #
+#########################
+
+*  dar BreakPoint na API CreateProcessA
+*  iniciar o ProjectG
+*  diminuir 0x18 do endereço da chamada da API (Será um PUSH)
+*  alterar para PUSH 0 e salvar
+
+###################################
+#   Remover SPLASH do GameGuard   #
+###################################
+
