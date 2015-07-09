@@ -40,3 +40,24 @@ Este arquivo inclui um tutorial para modificar o ProjectG
 #   Remover SPLASH do GameGuard   #
 ###################################
 
+*  dar BreakPoint na API GetCurrentProcessId
+*  iniciar o Projectg
+*  dar skip 3 vezes (F9)
+*  diminuir 0x17 do endereço da chamada da API (Será um JNZ)
+*  alterar para JE e salvar
+
+#############################
+#   Habilitar MultiClient   #
+#############################
+
+*  procurar pelo comando "cmp eax, 0b7" (2° ocorrência)
+*  alterar para "cmp eax, 0b6" e salvar
+
+###########################
+#   Desabilitar Loading   #
+###########################
+
+*  procurar por "LoadingRes" nas ocorrências de texto
+*  alterar para qualquer coisa e salvar
+
+//pak
