@@ -1,0 +1,9 @@
+##############
+#  ProjectG  #
+##############
+
+*  sem updater
+*  sem gameguard
+*  sem tela de loading
+*  multiclient
+*  sem checagens

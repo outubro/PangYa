@@ -24,7 +24,7 @@ Este arquivo inclui um tutorial para modificar o ProjectG
 #   Desabilitar GameGuard   #
 #############################
 
-*  somar 0xB7 ao endereço do Updater (Será uma CALL)
+*  somar 0xB2 ao endereço do Updater (Será uma CALL)
 *  alterar para NOP (90 90 90 90 90) e salvar
 
 #########################
@@ -50,14 +50,21 @@ Este arquivo inclui um tutorial para modificar o ProjectG
 #   Habilitar MultiClient   #
 #############################
 
-*  procurar pelo comando "cmp eax, 0b7" (2° ocorrência)
+*  procurar pela instrução "cmp eax, 0b7" (2° ocorrência)
 *  alterar para "cmp eax, 0b6" e salvar
 
 ###########################
 #   Desabilitar Loading   #
 ###########################
 
-*  procurar por "LoadingRes" nas ocorrências de texto
+*  procurar por "LoadingRes" nas referências de texto
 *  alterar para qualquer coisa e salvar
 
-//pak
+#############################
+#   Desabilitar Checagens   #
+#############################
+
+*  dar BreakPoint na API MessageBoxA
+*  iniciar o ProjectG
+*  diminuir 0x37 do endereço da chamada da API pela segunda vez (Será um JNZ 0xxxxxxxxx)
+*  alterar para JE e salvar
